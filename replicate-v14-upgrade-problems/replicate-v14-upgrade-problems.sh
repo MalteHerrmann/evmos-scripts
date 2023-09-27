@@ -38,7 +38,8 @@ evmosd tx vesting create-clawback-vesting-account evmos1rtj2r4eaz0v68mxjt5jleynm
 --vesting vesting_schedule.json \
 --from dev0 \
 --fees 5000000000000000aevmos \
---gas-adjustment 1.5 \
+--gas auto \
+--gas-adjustment 2.0 \
 --home $HOME/.tmp-evmosd \
 -b block \
 -y
@@ -47,9 +48,9 @@ evmosd tx vesting create-clawback-vesting-account evmos1rtj2r4eaz0v68mxjt5jleynm
 evmosd tx staking delegate $VALADDR 12345aevmos \
 --from dev2 \
 --home $HOME/.tmp-evmosd \
+--fees 500000000000000aevmos \
 --gas auto \
---fees 100000000000000aevmos \
---gas-adjustment 1.5 \
+--gas-adjustment 2.0 \
 -b block \
 -y
 
